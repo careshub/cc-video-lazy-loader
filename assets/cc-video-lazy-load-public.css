@@ -1,0 +1,46 @@
+.video-container {
+	position: relative;
+	padding-bottom: 56%;
+	padding-top: 0;
+	height: 0;
+	overflow: hidden;
+	margin-bottom: 2em;
+}
+/*.video-container.vimeo {
+	padding-bottom: 53%;
+}
+.video-container.youtube {
+	padding-bottom: 56%;
+}*/
+.video-container iframe,
+.video-container object,
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.video-container .video-poster-placeholder {
+	display: block;
+}
+/*Youtube videos thumbnails are narrower.*/
+.video-container.youtube .video-poster-placeholder {
+	margin-left: auto;
+	margin-right: auto;
+	/*YT thumbnails have black bars top and bottom.*/
+	margin-top: -6%;
+}
+.play-commons-video {
+	display: block;
+}
+.video-play-button-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url( '../img/video-play-button.png' ) no-repeat;
+	background-position: 50% 50%;
+}
+
+/*Maybe setting width/height via js would be easier.*/
